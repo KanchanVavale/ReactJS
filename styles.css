@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+  margin: 0;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;   
+  align-items: center;      
+}
+
+.container {
+  width: 100%;
+  max-width: 400px;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.balance {
+  text-align: center;
+}
+
+.summary {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.money.plus {
+  color: green;
+}
+
+.money.minus {
+  color: red;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+}
+
+form button {
+  width: 100%;
+  padding: 10px;
+  background: #6c63ff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+}
+
+.list li {
+  display: flex;
+  justify-content: space-between;
+  background: #f4f4f4;
+  margin: 8px 0;
+  padding: 10px;
+  border-right: 5px solid;
+}
+
+.list li.plus {
+  border-color: green;
+}
+
+.list li.minus {
+  border-color: red;
+}
+
+.list button {
+  background: red;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.type-selector {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px 0;
+}
+
+.type-selector label {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.type-selector input {
+  margin-right: 5px;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .container {
+    margin: 10px;
+  }
+}
